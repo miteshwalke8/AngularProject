@@ -1,0 +1,34 @@
+<mat-card>
+    <mat-card-header>
+      <mat-toolbar class="toolbar">
+        <mat-card-title>User List</mat-card-title>
+        <span class="toolbar-spacer"></span>
+        <button class="button" (click)="addUser()">Add User</button>
+      </mat-toolbar>
+    </mat-card-header>
+  
+    <mat-card-content>
+      <div class="container col-md-12">
+        <table class="table">
+          <thead>
+            <th scope="col">Serial Number</th>
+            <th scope="col">Full Name</th>
+            <th scope="col">Email</th>
+            <th scope="col" class="text-center">Action</th>
+          </thead>
+          <tbody>
+          <tr *ngFor="let User of UserList; let ndx = index">
+            <td>{{ndx + 1}}</td>
+            <td>{{User.FullName}}</td>
+            <td>{{User.Email}}</td>
+            <td><mat-icon class= "size" (click)="editUser(User.ID)">edit</mat-icon></td>
+            <td><mat-icon class= "size" (click)="deleteUser(User.ID)">delete</mat-icon></td>
+        
+          </tr>
+        </tbody>
+        </table>
+      </div>
+    </mat-card-content>
+  </mat-card>
+
+

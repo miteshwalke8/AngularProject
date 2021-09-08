@@ -1,0 +1,9 @@
+.toolbar{
+   text-align: center;
+   padding-left:20px ;
+   background-color:grey;
+}
+
+.container .row{
+    padding-top:  20px;
+}

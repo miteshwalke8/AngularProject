@@ -1,0 +1,20 @@
+.size {
+    font-size: medium;
+    cursor: pointer;
+}
+.container  {
+   padding-top: 20px;
+}
+.toolbar{
+     background-color: #D1A399;
+    
+}
+
+.button {
+    border-top-left-radius:25px;
+    border-top-right-radius:25px;
+    border-bottom-right-radius:25px;
+    border-bottom-left-radius:25px;
+    background-color: blue;
+    color: white;
+}
